@@ -1,0 +1,254 @@
+:root {
+    --footer-background-color: #707070;
+    --form-background-color: #CCE3E3;
+    --header-background-color: #68BDB8;
+    --leftMenu-background-color: #0D3457;
+    --main-background-color: #E4F2F2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, system-ui, blinkmacsystemfont, roboto;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-background-color);
+}
+
+/*********** header style ***********/
+header{
+    background-color: var(--header-background-color);
+}
+
+header .container li {
+    list-style: none;
+    color: white;
+}
+
+header .container .right-container li {
+    display: inline-block;
+}
+
+header .container .right-container {
+    float: right;
+    margin-right: 20px;
+}
+
+header .container .right-container img:not(#imgPortrait) {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+header .container .right-container-language, .right-container-img {
+    display: inline-block;
+}
+
+header .container  .right-container-img{
+    margin-top: 5px;
+}
+
+header .container .right-container #langageChoice {
+    padding-left: 25px;
+    border-left: solid 1px white;
+}
+
+#imgPortrait {
+    width: 23px;
+    height: 23px;
+    padding: 6px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+@media all and (min-width: 1200px) {
+
+    header .container #menu-bg{
+        display: none;
+    }
+
+    header .container #menu{
+        display: inline-block;
+    }
+
+    header .container li {
+        display: inline;
+    }
+
+    header .container nav ul {
+        padding: 25px 0 10px 0;
+    }
+
+    header .container nav li {
+        padding-left: 25px;
+        font-weight: bold;
+    }
+
+    header .container #left-logo {
+        border-radius: 0px 0px 8px 8px;
+        background-color: white;
+        padding: 8px;
+        width: 75px;
+        height: 60px;
+        position: absolute;
+        left: 2%;
+    }
+
+    header .left-container {
+        display: inline-block;
+        margin-left: 140px;
+    }
+
+    header .informations-container{
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+header .informations-container ul li{
+    display: inline-block;
+    font-size: 0.7em;
+    list-style: none;
+    color: white;
+
+}
+
+header .informations-container li:not(#decorationNone){
+    text-decoration: underline;
+}
+
+header .informations-container .toRotate{
+    content: "";
+    width: 11px;
+    height: 1px;
+    transform: rotate(115deg);
+    display: inline-block;
+    background-color: white;
+    margin: 0 12px 2px 12px;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    padding: 5px 0 140px 0;
+    font-size: 3em;
+}
+
+/* burger menu */
+
+@media all and (max-width: 1200px) {
+
+    header .informations-container{
+        text-align: center;
+        padding-top: 105px;
+    }
+
+    header .container #left-logo {
+        border-radius: 0px 0px 8px 8px;
+        background-color: white;
+        padding: 8px;
+        width: 75px;
+        height: 60px;
+        position: absolute;
+        left: 30%;
+    }
+
+    #menu {
+        z-index: 2;
+    }
+
+    #menu-bar {
+        width: 45px;
+        height: 40px;
+        margin: 30px 0 20px 20px;
+        cursor: pointer;
+    }
+
+    .bar {
+        height: 5px;
+        width: 100%;
+        background-color: var(--leftMenu-background-color);
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    #bar1 {
+        transform: translateY(-4px);
+    }
+
+    #bar3 {
+        transform: translateY(4px);
+    }
+
+    .nav {
+        transition: 0.3s ease;
+        display: none;
+    }
+
+    .nav ul {
+        padding: 0 22px;
+    }
+
+    .nav li {
+        list-style: none;
+        padding: 12px 0;
+    }
+
+    .nav li a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .nav li a:hover {
+        font-weight: bold;
+    }
+
+    .menu-bg, #menu {
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .menu-bg {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        margin: 30px 0 20px 20px;
+        background: radial-gradient(circle, var(--leftMenu-background-color), var(--leftMenu-background-color));
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
+
+    .change {
+        display: block;
+    }
+
+    .change .bar {
+        background-color: white;
+    }
+
+    .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+
+    .change #bar2 {
+        opacity: 0;
+    }
+
+    .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+    }
+
+    .change-bg {
+        width: 520px;
+        height: 600px;
+        transform: translate(-60%, -30%);
+    }
+}

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>MonkeyFactory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <meta name="msapplication-TileImage" content="/dist/img/Monkey_logo.jpg"/>
+    <meta name="description" content="Test réalisé par Dylan Dolmazon pour Monkey Factory" />
+    <link rel="stylesheet" href="dist/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" sizes="16x16" href="dist/img/Monkey_logo.jpg">
+</head>
+<body>
+<header>
+    <div class="container">
+        <img id="left-logo" src="dist/img/logo.png" alt="logo">
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <div class="left-container">
+                        <li><a>Mobilités</a></li>
+                        <li><a>Cartes et itinéraire</a></li>
+                        <li><a>Actus et infos trafic</a></li>
+                        <li><a>Boutique</a></li>
+                        <li><a>FAQ</a></li>
+                        <li><a>Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <div class="right-container">
+            <ul>
+                <div class="right-container-img">
+                    <li><a><img src="dist/img/panier.svg" alt="image du panier"></a></li>
+                    <li><a><img src="dist/img/search.svg" alt="image d'une loupe pour la recherche"></a></li>
+                    <li><a><img id="imgPortrait" src="dist/img/portrait.png" alt="image de votre compte"></a></li>
+                </div>
+                <div class="right-container-language">
+                    <li><a id="langageChoice">FR</a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="informations-container">
+            <ul>
+                <li>Mobilités</li>
+                <span class="toRotate"></span>
+                <li>transport en commun</li>
+                <span class="toRotate"></span>
+                <li>Bsoin d'informations</li>
+                <span class="toRotate"></span>
+                <li id="decorationNone">Comment voyager avec Imagine ?</li>
+            </ul>
+        </div>
+        <h1>Comment voyager avec Imagine ?</h1>
+    </div>
+</header>
+<main>
+    <div id="top-background-radius"></div>
+    <div class="container">
+        <div class="container-aside">
+            <aside>
+                <ul>
+                    <div onmouseover="hover(this)" onmouseout="hoverOff(this)">
+                        <span></span>
+                        <li>Comment voyager avec Imagine ?</li>
+                    </div>
+                    <div  onmouseover="hover(this)" onmouseout="hoverOff(this)">
+                        <span></span>
+                        <li>pourquoi activer le service</li>
+                    </div>
+                    <div onmouseover="hover(this)" onmouseout="hoverOff(this)">
+                        <span></span>
+                        <li >Le m-Ticket, mon titre sur smartphone</li>
+                    </div>
+                    <div  onmouseover="hover(this)" onmouseout="hoverOff(this)">
+                        <span></span>
+                        <li>Les tarifs</li>
+                    </div>
+                </ul>
+            </aside>
+        </div>
+        <div class="content">
+            <img id="img-imagine" src="dist/img/imagine-img.png" alt="imagine ligne de ville">
+            <div class="content-explication">
+                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews
+                    Iterative approches to corporate strategy foster collaborative thinking to further
+                    the overall value proposition.</p>
+                <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going foriward, a new
+                    normal that has evolved from generation X is on the rumway heading towards a streamlined cloud solution. User generared
+                    content in real-time will have multiple touchpoints for offshoring</p>
+            </div>
+            <div class="child-content">
+                <div class="child-text">
+                    <h2>Organically grow the holistic world view of disruptive.</h2>
+                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the
+                        end of the day, going forward, a new normal that has evolved from generation X is
+                        on the runway heading towards a streamlined cloud solution.</p>
+                </div>
+                <div class="child-image">
+                    <img src="dist/img/enfant.png">
+                </div>
+            </div>
+            <div class="content-form">
+                <form>
+                    <div class="top-content">
+                        <h2>Informations sur l'enfant</h2>
+                        <div id="first-name-child" class="field">
+                            <i class="fa fa-smile-o"></i>
+                            <input  id="input-first-name-child" required autocomplete="off" class="input-field" type="text">
+                            <label for="input-first-name-child" title="Prénom de l'enfant"></label>
+                        </div>
+                        <div id="name-child" class="field">
+                            <i class="fa fa-smile-o"></i>
+                            <input id="input-name-child" class="input-field" type="text" required autocomplete="off" class="input-field">
+                            <label for="input-name-child" title="Nom de l'enfant"></label>
+                        </div>
+                        <div id="email" class="field">
+                            <i class="fa fa-at"></i>
+                            <input id="input-email" class="input-field" type="email" required autocomplete="off" class="input-field">
+                            <label for="input-email" title="Adresse email"></label>
+                        </div>
+                        <div id="phone-number-child" class="field">
+                            <i class="fa fa-phone"></i>
+                            <input id="input-phone-number-child" class="input-field" type="tel"  required autocomplete="off" class="input-field">
+                            <label class="label-content" for="input-phone-number-child" title="Numéro de téléphone de l'enfant (facultatif)"></label>
+                        </div>
+                        <div id="card-number-child" class="field">
+                            <i class="fa fa-address-card-o"></i>
+                            <input id="input-card-number-child" class="input-field" type="number" required autocomplete="off" class="input-field">
+                            <label id="test" class="label-content" for="input-card-number-child" title="Numéro de carte Simplicité (facultatif)"></label>
+                        </div>
+                        <div id="facultatif-phone-content">
+                            <p>* Facultatif</p>
+                        </div>
+                    </div>
+                    <div class="bottom-content">
+                        <h2>Informations sur le parent / tuteur / représentant légal</h2>
+                        <div id="first-name" class="field">
+                            <i class="fa fa-smile-o"></i>
+                            <input id="input-first-name" class="input-field" type="text" required autocomplete="off" class="input-field">
+                            <label for="input-first-name" title="Prénom"></label>
+                        </div>
+                        <div id="name" class="field">
+                            <i class="fa fa-smile-o"></i>
+                            <input id="input-name" class="input-field" type="text" required autocomplete="off" class="input-field">
+                            <label for="input-name" title="Nom"></label>
+                        </div>
+                        <div id="phone-number" class="field">
+                            <i class="fa fa-phone"></i>
+                            <input id="input-phone-number" class="input-field" type="tel" required autocomplete="off" class="input-field">
+                            <label for="input-phone-number" title="Numéro de téléphone"></label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Envoyer le formulaire">
+                </form>
+            </div>
+            <div class="bottom-form-content">
+                <div class="left-img-content">
+                    <img src="dist/img/img1.png">
+                </div>
+                <div class="right-text-content">
+                    <div class="right-text-center-content">
+                    <h3>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</h3>
+                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                    </div>
+                </div>
+                <div class="bottom-text-content">
+                    <h3> Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</h3>
+                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="img-content">
+            <img src="dist/img/logo2.png">
+        </div>
+        <div class="top-content">
+            <div>
+                <h4>Mobilités</h4>
+                <ul>
+                    <li>Transport en commun</li>
+                    <li>A vélo avec vivolt</li>
+                    <li>Transport scolaire</li>
+                    <li>Cap'Imagine</li>
+                    <li>Autopartage / Covoiturage</li>
+                    <li class="last-li">Les rautres réseaux</li>
+                </ul>
+            </div>
+            <div>
+                <h4 id="cartes-h4">Cartes et itinéraire</h4>
+                <ul>
+                    <li>Calcul d'itinéraire</li>
+                    <li>Plan interactif</li>
+                    <li class="last-li">Plan des lignes et stations</li>
+                </ul>
+                <h4 id="second-h4">E-boutique</h4>
+                <ul>
+                    <li>Imagine / Cap'Imagine</li>
+                    <li>Vivolt VLS</li>
+                    <li>Vivolt LLD</li>
+                    <li class="last-li">Scolaire</li>
+                </ul>
+            </div>
+            <div>
+                <h4>FAQ</h4>
+                <h4 id="contact-h4">Contact</h4>
+            </div>
+            <div>
+                <h4>Espace client</h4>
+                <ul>
+                    <li>Connexion</li>
+                    <li>Mon profil</li>
+                    <li>Mes infos mobilitéq</li>
+                    <li>Mes adresses</li>
+                    <li>Mes moyens de paiement</li>
+                    <li>Services de mobilités</li>
+                    <li>Suivi conso</li>
+                    <li class="last-li">Commandes</li>
+                </ul>
+            </div>
+            <div>
+                <ul id="last-ul">
+                    <li>Transactions et commandes</li>
+                    <li>Mes titres et forfaits</li>
+                    <li>Mes paramétres</li>
+                    <li>Clôturer mon compte</li>
+                    <li>Deconnexion</li>
+                    <li class="last-li">Les rautres réseaux</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-content">
+          <div>
+              <p>Made with a lot of</p>
+              <i class="fa fa-heart"></i>
+              <p>by Monkey Factory</p>
+          </div>
+            <div class="right-bottom-content">
+                <ul>
+                    <li>Informations sur les cookies</li>
+                    <span></span>
+                    <li>Politique de confidentialité</li>
+                    <span></span>
+                    <li>Mentions légales</li>
+                    <span></span>
+                    <li>Plan du site</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="dist/js/script.min.js"></script>
+</html>

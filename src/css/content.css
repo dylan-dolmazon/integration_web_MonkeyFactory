@@ -1,0 +1,249 @@
+
+/*********** contenu style ***********/
+
+main {
+    display: block;
+    height: 100%;
+}
+
+main #top-background-radius {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: var(--main-background-color);
+    border-radius: 20px 20px 0 0;
+}
+
+
+@media all and (max-width: 416px) {
+    main #top-background-radius {
+        top: 350px;
+    }
+}
+
+
+
+@media all and (min-width: 416px) {
+    main #top-background-radius {
+        top: 300px;
+    }
+}
+
+main .container{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    top: -180px;
+    /*text-align: center;*/
+}
+/**** aside style ****/
+
+@media all and (max-width: 1400px){
+    main .container aside {
+        background-color: var(--leftMenu-background-color);
+        padding: 25px;
+        border-radius: 12px;
+        color: white;
+        margin: auto;
+        display: inline-block;
+    }
+
+    main .container .container-aside {
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    main .container .content {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+
+@media all and (min-width: 1400px) {
+    main .container .container-aside {
+        display: inline-block;
+        width: 20%;
+        position: relative;
+        top: 0px;
+    }
+    main .container aside {
+        margin-left: 40px;
+        background-color: var(--leftMenu-background-color);
+        padding: 25px;
+        border-radius: 12px;
+        color: white;
+        position: fixed;
+        top: 200px;
+    }
+
+    main .container .content{
+        display: inline-block;
+        width: 60%;
+        text-align: center;
+        position: relative;
+        padding-left: 80px;
+    }
+}
+
+
+    main .container aside li {
+        display: inline-block;
+        list-style: none;
+        padding: 12px 0 12px 0;
+        border-bottom: solid 0.5px rgba(255, 255, 255, 0.3);
+    }
+
+    main .container aside .active li {
+        color: #E6582B;
+    }
+
+    main .container aside .active span {
+        width: 12px;
+        height: 2px;
+        content: "";
+        display: inline-block;
+        background-color: #E6582B;
+        margin-left: -32px;
+        margin-right: 20px;
+    }
+
+/**** contenue style ****/
+
+@media all and (min-width: 1400px){
+    main .container .content #img-imagine{
+        width: 75%;
+        position: absolute;
+        top: 100px;
+        left: 9%;
+    }
+
+    main .container .content .content-explication{
+        width: 100%;
+        padding-top: 460px;
+    }
+}
+
+@media all and (max-width: 1400px){
+    main .container .content #img-imagine{
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    main .container .content .content-explication{
+        width: 100%;
+    }
+
+}
+
+main .container .content .content-explication p{
+    width: 75%;
+    margin: auto;
+    padding-top: 40px;
+    text-align: left;
+}
+
+main .container .content .content-explication p:first-child{
+    font-size: 1.2em;
+}
+
+main .container .content .content-explication p:nth-child(2){
+    font-size: 0.8em;
+    color: grey;
+}
+
+main .container .content .child-content{
+    margin-top: 30px;
+}
+
+main .container .content .child-text{
+    display: inline-block;
+    width: 60%;
+}
+
+main .container .content .child-text h2, main .container .content .child-text p{
+    margin-left: 8%;
+    text-align: left;
+    padding-top: 20px;
+}
+
+main .container .content .child-text h2{
+    font-size: 2.3em;
+}
+main .container .content p {
+    font-size: 0.8em;
+    color: grey;
+}
+main .container .content .child-image{
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+}
+
+main .container .content .child-image img{
+    margin-top: 30px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+@media all and (max-width: 1000px){
+    main .container .content .left-img-content, main .container .content .right-text-content {
+        display: block;
+        text-align: left;
+    }
+
+    main .container .content .left-img-content{
+        width: 40%;
+        margin: auto;
+    }
+
+    main .container .content .left-img-content img{
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 1000px){
+
+    main .container .content .left-img-content, main .container .content .right-text-content {
+        display: inline-block;
+        text-align: left;
+        vertical-align: -moz-middle-with-baseline;
+    }
+    main .container .content .left-img-content img{
+        width: 100%;
+    }
+
+    main .container .content .right-text-content{
+        width: 59%;
+    }
+
+    main .container .content .left-img-content {
+        width: 40%;
+    }
+}
+
+main .container .content .bottom-form-content{
+    text-align: left;
+}
+
+main .container .content .right-text-center-content{
+    width: 80%;
+    margin: auto;
+}
+
+main .container .content  h3{
+    font-size: 1.6em;
+}
+
+main .container .content .bottom-form-content  p{
+    margin-top: 50px;
+}
+
+main .container .content .bottom-text-content{
+    width: 70%;
+    margin: 50px auto 0 auto;
+}
